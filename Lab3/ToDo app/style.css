@@ -62,6 +62,9 @@ body{
    height: 20px;
    margin-right: 30px;
 }
+.completed:hover{
+   transform: scale(1.1);
+}
 .content{
    font-size: 15px;
    border: none;
@@ -73,6 +76,9 @@ body{
    border: none;
    text-align: right;
    background-color: white;
+}
+.remove:hover{
+   transform: scale(1.5);
 }
 i{ 
    color: red;
