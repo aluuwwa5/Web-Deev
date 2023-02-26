@@ -11,7 +11,7 @@ export class ProductListComponent {
   products = products;
 
   shareViaTelegram(product : {link : string}) {
-      window.open("https://telegram.me/share/url?url=<URL>" + product.link + "&text=<{{product.name}}>")
+      window.open("https://telegram.me/share/url?url=" + product.link + "&text=<{{product.name}}>")
   }
   shareViaWhatsapp(product : {link : string}) {
     window.open("https://wa.me/?text=" + product.link)  
