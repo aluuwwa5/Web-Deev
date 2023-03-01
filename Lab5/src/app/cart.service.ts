@@ -15,8 +15,8 @@ export class CartService {
     return this.items;
   }
 
-  addToCart(product: Product) {
-    this.items.push(product);
+    addToCart(product: { description: string | undefined; id: number | undefined; image: string | undefined; link: string | undefined; name: string | undefined; price: number | undefined; rating: number | undefined } | undefined) {
+    this.items.push(<Product>product);
   }
 
   clearCart() {

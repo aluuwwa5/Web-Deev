@@ -10,32 +10,35 @@ export class ProductItemComponent {
   @Input() product : { description: string | undefined; id: number | undefined; image: string | undefined; link: string | undefined; name: string | undefined; price: number | undefined; rating: number | undefined };
   @Output() remove = new EventEmitter();
 
-  @Output() show = new EventEmitter();
-
   like : number;
+  show : boolean;
   constructor() {
     this.like = 0;
+    this.show = false;
 
     this.product = new class implements Product {
       // @ts-ignore
-      description: string | undefined;
-      // @ts-ignore
       id: number | undefined;
       // @ts-ignore
-      image: string | undefined;
-      // @ts-ignore
-      link: string | undefined;
-      // @ts-ignore
       name: string | undefined;
+      // @ts-ignore
+      image: string | undefined;
       // @ts-ignore
       price: number | undefined;
       // @ts-ignore
       rating: number | undefined;
+      // @ts-ignore
+      description: string | undefined;
+      // @ts-ignore
+      link: string | undefined;
     }
   }
 
   incLike(){
     this.like++;
+  }
+  showDetails(){
+    this.show = !this.show;
   }
   removeProduct(){
     this.remove.emit(this.product.id)

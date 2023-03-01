@@ -1,7 +1,7 @@
 <h3 style="cursor:pointer">
     <a
             [title]="product.name + ' - go to store and make a purchase'"
-            [href]="product"
+            [href]="product.link"
     >
         {{ product.name }}
     </a>
@@ -21,7 +21,8 @@
 </div>
 
 <div class="show-and-share-and-remove">
-    <button id="show-details">Show Details</button>
+    <button id="show-details" (click)="showDetails()">Show Details</button>
+    <app-product-details *ngIf="show" [detailedProduct]="product"></app-product-details>
 
     <button id="remove" (click)="removeProduct()">Remove</button>
 
