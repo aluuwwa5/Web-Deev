@@ -10,6 +10,8 @@ export class ProductItemComponent {
   @Input() product : { description: string | undefined; id: number | undefined; image: string | undefined; link: string | undefined; name: string | undefined; price: number | undefined; rating: number | undefined };
   @Output() remove = new EventEmitter();
 
+  @Output() show = new EventEmitter();
+
   like : number;
   constructor() {
     this.like = 0;
@@ -38,7 +40,6 @@ export class ProductItemComponent {
   removeProduct(){
     this.remove.emit(this.product.id)
   }
-
   shareViaTelegram() {
     window.open("https://telegram.me/share/url?url=" + this.product.link + "&text=<{{product.name}}>")
   }

@@ -23,7 +23,6 @@ import { ProductItemComponent } from './product-item/product-item.component';
     RouterModule.forRoot([
       { path: '', component: CategoriesComponent },
       { path: 'categories/:categoryId', component: ProductListComponent},
-      { path: 'products/:productId', component: ProductDetailsComponent},
       { path: 'cart', component : CartComponent},
       { path: 'shipping', component : ShippingComponent}
     ])
