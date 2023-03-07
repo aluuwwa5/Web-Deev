@@ -2,9 +2,14 @@
 
 <div *ngIf="loaded">
   <div *ngFor="let album of albums" class="album">
-    <a routerLink="/albums/{{album.id}}" class="album-title">
-      {{album.id}}. {{album.title}}
-    </a>
+
+    <div>
+      <a routerLink="/albums/{{album.id}}" class="album-title">
+        {{album.id}}. {{album.title}}
+      </a>
+    </div>
+
+    <button id="remove" (click)="removeAlbum(album.id)">Remove</button>
   </div>
 </div>
 

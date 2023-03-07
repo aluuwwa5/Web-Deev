@@ -12,9 +12,15 @@ export class AlbumDetailsComponent implements OnInit{
   album : Album;
   loaded : boolean;
 
+  editableAlbum : Album;
+
+  edit : boolean;
+
   constructor(private albumService : AlbumsService, private route : ActivatedRoute) {
     this.album = {} as Album;
     this.loaded = true;
+    this.edit = false;
+    this.editableAlbum = {} as Album;
   }
 
   ngOnInit() {
@@ -28,5 +34,14 @@ export class AlbumDetailsComponent implements OnInit{
         this.loaded = true;
       })
     })
+  }
+
+  saveChanges(){
+    this.editableAlbum.userId = this.album.userId;
+
+    this.album = this.editableAlbum;
+    this.edit = !this.edit;
+
+    this.editableAlbum = {} as Album;
   }
 }

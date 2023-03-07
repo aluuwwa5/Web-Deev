@@ -12,3 +12,36 @@
 .door:hover{
   transform: scale(1.1);
 }
+
+#edit{
+  background-color: tomato;
+  border-radius: 5px;
+  color: white;
+  border-color: #BDBDBD;
+}
+#edit:hover{
+  transform: scale(1.1);
+}
+
+#edit-form{
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  border-radius: 4px;
+  border-color: #1c1e21;
+  box-shadow: #BDBDBD;
+  justify-content: center;
+}
+
+#save{
+  margin-top: 10px;
+  background-color: #47afff;
+  border-color: white;
+  box-shadow: #BDBDBD;
+  color: white;
+  border-radius: 5px;
+  width: 200px;
+}
+#save:hover{
+  transform: scale(1.1);
+}

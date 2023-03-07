@@ -27,4 +27,8 @@ export class AlbumsComponent implements OnInit{
   ngOnInit(): void {
     this.getAlbums();
   }
+
+  removeAlbum(id: number){
+    this.albums = this.albums.filter((x) => x.id !== id);
+  }
 }
