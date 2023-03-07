@@ -1,0 +1,14 @@
+#detail{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.return-back{
+  margin-top: 25px;
+  margin-right: 35px;
+}
+
+.door:hover{
+  transform: scale(1.1);
+}

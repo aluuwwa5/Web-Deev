@@ -1,0 +1,18 @@
+<div *ngIf="loaded" id="detail">
+  <div>
+    <h2>Details</h2>
+
+    <h4>ID : {{album.id}}</h4>
+    <h4>UserID : {{album.userId}}</h4>
+    <h4>Title : {{album.title}}</h4>
+  </div>
+
+  <div class="return-back">
+    <a routerLink="/albums">
+      <img src="https://wsp.kbtu.kz/VAADIN/themes/r5/img/button/logout_24.png" alt="door" class="door">
+    </a>
+  </div>
+
+</div>
+
+<h3 *ngIf="!loaded">Album details are loading...</h3>

@@ -1,0 +1,11 @@
+<h1>Album List</h1>
+
+<div *ngIf="loaded">
+  <div *ngFor="let album of albums" class="album">
+    <a routerLink="/albums/{{album.id}}" class="album-title">
+      {{album.id}}. {{album.title}}
+    </a>
+  </div>
+</div>
+
+<h3 *ngIf="!loaded">Albums are loading...</h3>
