@@ -38,7 +38,9 @@ export class AlbumDetailsComponent implements OnInit{
   saveChanges(){
     this.editableAlbum.userId = this.album.userId;
 
-    this.album = this.editableAlbum;
+    this.albumService.updateAlbum(this.album.id, this.editableAlbum).subscribe((alb) =>{
+      this.album = alb;
+    })
 
     this.edit = !this.edit;
 
