@@ -9,6 +9,22 @@
   justify-content: space-between;
 }
 
+.add-album{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 400px;
+  padding: 10px 10px;
+  margin-bottom: 10px;
+}
+#id{
+  margin-bottom: 10px;
+}
+#title{
+  margin-bottom: 10px;
+}
+
+
 .album-title{
   text-decoration: none;
   color: #1c1e21;

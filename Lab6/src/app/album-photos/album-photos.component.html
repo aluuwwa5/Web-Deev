@@ -1,1 +1,6 @@
-<p>album-photos works!</p>
+<ul *ngIf="loaded">
+  <li *ngFor="let photo of photos">
+      {{photo.albumId}} - {{photo.title}} - {{photo.id}} - {{photo.url}}
+  </li>
+</ul>
+

@@ -1,5 +1,5 @@
-import {Component, OnInit} from '@angular/core';
-import {Album} from "../models";
+import {Component, Input, OnInit} from '@angular/core';
+import {Album, Photo} from "../models";
 import {AlbumsService} from "../albums.service";
 import {ActivatedRoute} from "@angular/router";
 
@@ -9,11 +9,10 @@ import {ActivatedRoute} from "@angular/router";
   styleUrls: ['./album-details.component.css']
 })
 export class AlbumDetailsComponent implements OnInit{
+
   album : Album;
   loaded : boolean;
-
   editableAlbum : Album;
-
   edit : boolean;
 
   constructor(private albumService : AlbumsService, private route : ActivatedRoute) {
@@ -40,6 +39,7 @@ export class AlbumDetailsComponent implements OnInit{
     this.editableAlbum.userId = this.album.userId;
 
     this.album = this.editableAlbum;
+
     this.edit = !this.edit;
 
     this.editableAlbum = {} as Album;
