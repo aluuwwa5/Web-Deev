@@ -8,3 +8,6 @@ class Member(models.Model):
     lastName = models.CharField(max_length=250)
     age = models.IntegerField(null=True)
     address = models.CharField(max_length=200, null=True)
+
+    def __str__(self):
+        return f"{self.firstName} {self.lastName}"
