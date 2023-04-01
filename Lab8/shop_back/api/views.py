@@ -22,12 +22,12 @@ def getProductById(request, id):
 def getCategories(request):
     categories = Category.objects.all().values()
 
-    return JsonResponse(categories, safe=False, json_dumps_params={'indent': 2})
+    return JsonResponse(list(categories), safe=False, json_dumps_params={'indent': 2})
 
 
 def getCategoryById(request, id):
     category = Category.objects.filter(pk=id)
-    category = [category.to_json() for c in category]
+    category = [c.to_json() for c in category]
 
     return JsonResponse(category, safe=False, json_dumps_params={'indent': 2})
 
@@ -37,3 +37,4 @@ def getProductsByCategory(request, id):
     productsByCat = [p_c.to_json() for p_c in productsByCat]
 
     return JsonResponse(productsByCat, safe=False, json_dumps_params={'indent': 2})
+
