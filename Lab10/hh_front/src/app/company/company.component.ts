@@ -22,4 +22,9 @@ export class CompanyComponent implements OnInit{
     }))
   }
 
+  deleteCompany(id: number){
+    this.companyService.deleteCompany(id).subscribe((company => {
+      this.companies = this.companies.filter((comp) => comp.id != id)
+    }))
+  }
 }

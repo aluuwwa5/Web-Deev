@@ -21,8 +21,9 @@
 <h2>Company List</h2>
 
 <ul>
-  <li *ngFor="let company of companies">
-    <a routerLink="/companies/{{company.id}}" class="company">id-{{company.id}}. {{company.name}}</a>
+  <li *ngFor="let company of companies" class="company">
+    id-{{company.id}}. <a routerLink="/companies/{{company.id}}" class="company-name">{{company.name}}</a>
     <a routerLink="/companies/{{company.id}}/vacancies" class="comp-vacancies">(vacancies)</a>
+    <button class="delete" (click)="deleteCompany(company.id)"> delete </button>
   </li>
 </ul>

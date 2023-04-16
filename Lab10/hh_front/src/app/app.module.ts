@@ -10,12 +10,14 @@ import {HttpClientModule} from "@angular/common/http";
 import {FormsModule} from "@angular/forms";
 
 import {CommonModule} from '@angular/common';
+import { CompanyDetailsComponent } from './company-details/company-details.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CompanyComponent,
-    VacancyComponent
+    VacancyComponent,
+    CompanyDetailsComponent
   ],
   imports: [
     BrowserModule,

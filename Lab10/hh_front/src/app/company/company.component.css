@@ -11,14 +11,28 @@
 }
 
 .company{
+  margin-bottom: 10px;
+}
+
+.company-name{
   text-decoration: none;
   margin-right: 10px;
   color: tomato;
 }
-.company:hover{
+.company-name:hover{
   font-size: 15px;
   text-decoration: underline;
 }
 .comp-vacancies{
   text-decoration: none;
+  margin-right: 10px;
+}
+
+.delete{
+  background-color: red;
+  color: white;
+  border-color: red;
+}
+.delete:active{
+  transform: scale(1.05);
 }
