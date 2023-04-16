@@ -5,10 +5,12 @@ from . import views
 
 urlpatterns = [
     path('companies/', views.CompanyViewSet.as_view({'get': 'list', 'post': 'create'}), name='companies'),
-    path('companies/<int:pk>/', views.CompanyViewSet.as_view({'get': 'retrieve'}), name='company details'),
-    # path('companies/<int:id>/vacancies/', views.list_company_vacancies, name='list of vacancies of company'),
-    # path('vacancies/', views.list_vacancies, name='list of vacancies'),
-    # path('vacancies/<int:id>/', views.vacancy_details, name='vacancy details'),
-    # path('vacancies/top_ten/', views.list_topten_vacancies, name='list of top ten vacancies'),
+    path('companies/<int:pk>/', views.CompanyViewSet.as_view({'get': 'retrieve', 'put': 'update', 'delete': 'destroy'}), name='company details'),
+    path('companies/<int:pk>/vacancies/', views.CompanyViewSet.as_view({'get': 'list_vacancies'}), name='list of vacancies of company'),
+    path('vacancies/top_ten/', views.VacancyViewSet.as_view({'get': 'list_top10'}), name='list of top ten vacancies'),
 ]
 
+r = DefaultRouter()
+r.register(r'vacancies', views.VacancyViewSet, basename='vacancy')
+
+urlpatterns += r.urls
