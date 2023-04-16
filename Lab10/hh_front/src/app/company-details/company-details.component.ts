@@ -38,4 +38,14 @@ export class CompanyDetailsComponent implements OnInit{
       })
     })
   }
+
+  saveChanges(){
+    this.companyService.updateCompany(this.editableCompany, this.company.id).subscribe((comp: Company) =>{
+      this.company = comp;
+    })
+
+    this.edit = !this.edit;
+
+    this.editableCompany = {} as Company;
+  }
 }

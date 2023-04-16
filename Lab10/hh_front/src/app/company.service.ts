@@ -30,4 +30,15 @@ export class CompanyService {
       )
     }
 
+    createCompany(company: Company): Observable<Company>{
+      return this.client.post<Company>(`${this.BASE_URL}/api/companies/`,  company)
+    }
+
+    updateCompany(company: Company, vac_id: number) : Observable<Company>{
+    return this.client.put<Company>(
+      `${this.BASE_URL}/api/companies/${vac_id}/`,
+      company
+    )
+  }
+
 }

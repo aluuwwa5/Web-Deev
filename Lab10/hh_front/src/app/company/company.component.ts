@@ -9,12 +9,16 @@ import {CompanyService} from "../company.service";
 })
 export class CompanyComponent implements OnInit{
 
-  constructor(private companyService: CompanyService) {
-  }
   ngOnInit(): void {
     this.getCompanies();
   }
   companies : Company[] = [];
+
+  newCompany : Company;
+
+  constructor(private companyService: CompanyService) {
+    this.newCompany = {} as Company;
+  }
 
   getCompanies(){
     this.companyService.getCompanies().subscribe((companies =>{
@@ -27,4 +31,13 @@ export class CompanyComponent implements OnInit{
       this.companies = this.companies.filter((comp) => comp.id != id)
     }))
   }
+
+  createCompany(){
+    this.companyService.createCompany(this.newCompany).subscribe((comp) => {
+      this.companies.push(comp);
+      this.newCompany = {} as Company;
+    })
+  }
+
+
 }
