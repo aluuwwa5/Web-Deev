@@ -11,40 +11,40 @@ export const categories = [
         items : [
             {
                 id: 1,
-                name: 'Смартфон Apple iPhone 14 Pro 256Gb фиолетовый',
-                image : 'https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/h4d/h62/62948396728350/apple-iphone-14-pro-128gb-fioletovyj-106363319-1.jpg',
+                name: 'Apple iPhone 15 Pro Max 256Gb серый',
+                image : 'https://resources.cdn-kaspi.kz/img/m/p/hc1/h65/83559848181790.png?format=gallery-medium',
                 price: 648000,
                 rating : 5,
                 description: 'технология NFC: Да\n' +
-                    'цвет: фиолетовый\n' +
+                    'цвет: серый\n' +
                     'тип экрана: OLED, Super Retina XDR display с возможностью постоянной работы\n' +
                     'диагональ: 6.1 дюйм\n' +
                     'размер оперативной памяти: 6 ГБ\n' +
                     'процессор: 6-ядерный Apple A16 Bionic\n' +
                     'объем встроенной памяти: 256 ГБ\n' +
                     'емкость аккумулятора: 3125 мАч',
-                link: 'https://kaspi.kz/shop/p/apple-iphone-14-pro-256gb-fioletovyi-106363319/?c=750000000&utm_source=google&utm_medium=cpc&utm_campaign=shop_google_search_kaspi_brand_desktop&gclid=Cj0KCQiAo-yfBhD_ARIsANr56g5NRiCucqaaUjbyI6MLl8mXS3u_JGonVLj_PwLDHAClCvX9EfyDSjgaAoYJEALw_wcB#!/item'
+                link: 'https://kaspi.kz/shop/p/apple-iphone-15-pro-max-256gb-seryi-113138420/?c=750000000'
             },
             {
                 id: 2,
-                name: 'Смартфон Apple iPhone 13 128Gb синий',
-                image : 'https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/h91/h1d/46392661737502/apple-iphone-13-128gb-sinij-102298364-1-Container.jpg',
-                price: 378000,
+                name: 'Смартфон Samsung Galaxy A05s 4 ГБ/128 ГБ фиолетовый',
+                image : 'https://resources.cdn-kaspi.kz/img/m/p/h88/hfd/84523124981790.png?format=gallery-medium',
+                price: 69000,
                 rating : 4.9,
                 description: 'технология NFC: Да\n' +
-                    'цвет: синий\n' +
+                    'цвет: фиолетовый\n' +
                     'тип экрана: OLED, Super Retina XDR\n' +
                     'диагональ: 6.1 дюйм\n' +
                     'размер оперативной памяти: 4 ГБ\n' +
                     'процессор: 6-ядерный Apple A15 Bionic\n' +
                     'объем встроенной памяти: 128 ГБ\n' +
                     'емкость аккумулятора: 3095 мАч',
-                link: 'https://kaspi.kz/shop/p/apple-iphone-13-128gb-sinii-102298364/?c=750000000&utm_source=google&utm_medium=cpc&utm_campaign=shop_google_search_kaspi_brand_desktop&gclid=Cj0KCQiAo-yfBhD_ARIsANr56g5NRiCucqaaUjbyI6MLl8mXS3u_JGonVLj_PwLDHAClCvX9EfyDSjgaAoYJEALw_wcB#!/item',
+                link: 'https://kaspi.kz/shop/p/samsung-galaxy-a05s-4-gb-128-gb-fioletovyi-114693084/?c=750000000',
             },
             {
                 id: 3,
                 name: 'Смартфон Samsung Galaxy A23 6 ГБ/128 ГБ оранжевый',
-                image : 'https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/h68/h07/49792674463774/samsung-galaxy-a23-128gb-peach-104347752-1.jpg',
+                image : 'https://resources.cdn-kaspi.kz/img/m/p/h98/h3c/64454674055198.jpg?format=gallery-medium',
                 price: 104625,
                 rating : 4,
                 description: 'ехнология NFC: Да\n' +
@@ -74,7 +74,7 @@ export const categories = [
             {
                 id: 5,
                 name: 'Смартфон Samsung Galaxy S23+ 5G 8 ГБ/512 ГБ черный + подарок',
-                image : 'https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/h14/h7e/68538729332766/samsung-galaxy-s23-5g-8-gb-512-gb-chernyi-108714366-1.jpg',
+                image : 'https://resources.cdn-kaspi.kz/img/m/p/h56/he7/80267955830814.jpg?format=gallery-medium',
                 price: 600000,
                 rating : 4.8,
                 description: 'технология NFC: Да\n' +
@@ -96,7 +96,7 @@ export const categories = [
             {
                 id: 1,
                 name: 'Стиральная машина LG F2J3HS4L серебристый',
-                image : 'https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/h2e/h56/31753168060446/lg-f2j3hs4l-serebristyj-3601603-1.jpg',
+                image : 'https://resources.cdn-kaspi.kz/img/m/p/hac/h36/63782295109662.jpg?format=gallery-medium',
                 price: 220000 ,
                 rating : 3.9,
                 description: 'установка: отдельностоящая\n' +
@@ -151,7 +151,7 @@ export const categories = [
             {
                 id: 5,
                 name: 'Пылесос ARNICA Hydra Rain Plus красный',
-                image : 'https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/h2f/hda/68829486022686/arnica-hydra-rain-plus-krasnyi-3700837-1.jpg',
+                image : 'https://resources.cdn-kaspi.kz/img/m/p/h75/h61/80834599780382.jpg?format=gallery-medium',
                 price: 99970,
                 rating : 4,
                 description: 'тип: сепараторный\n' +
@@ -249,17 +249,17 @@ export const categories = [
             },
             {
                 id: 3,
-                name: 'Игровой контроллер Artifact NJOS M3',
-                image : 'https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/h39/hbd/68938471604254/artifact-njos-m3-chernyi-103347636-1.jpg',
-                price: 34900,
+                name: 'Кабейн О. Ф.: Харизма: Как влиять, убеждать и',
+                image : 'https://resources.cdn-kaspi.kz/img/m/p/h53/h80/63813537857566.jpg?format=gallery-medium',
+                price: 987,
                 rating : 4.1,
-                description: 'Наш игровой геймпад Artifact NJOS M3 для смартфонов выведет вашу игру на новый уровень! ',
-                link: 'https://kaspi.kz/shop/p/artifact-njos-m3-chernyi-103347636/?c=750000000#!/item'
+                description: 'Книга развенчивает один из самых закостенелых мифов современности о том, что харизма — дар богов. ',
+                link: 'https://kaspi.kz/shop/p/kabein-o-f-harizma-kak-vlijat-ubezhdat-i-vdohnovljat--26001091/?c=750000000&utm_source=google&utm_medium=cpc&utm_campaign=shop_google_search_kaspi_brand_desktop&gclid=Cj0KCQiAo-yfBhD_ARIsANr56g5NRiCucqaaUjbyI6MLl8mXS3u_JGonVLj_PwLDHAClCvX9EfyDSjgaAoYJEALw_wcB'
             },
             {
                 id: 4,
                 name: 'Умная колонка Яндекс Станция Мини',
-                image : 'https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/h4c/hb7/46546983649310/yandeks-novaya-stantsiya-mini-s-chasami-chernyi-102580021-1.jpg',
+                image : 'https://resources.cdn-kaspi.kz/img/m/p/h39/hca/63898629537822.jpg?format=gallery-medium',
                 price: 44500,
                 rating : 4.4,
                 description: 'Станция Мини разбудит вас вовремя, напомнит покормить кота, расскажет новости, напомнит о важных или приятных делах. - Алиса, напомни про встречу через час.',
@@ -267,12 +267,12 @@ export const categories = [
             },
             {
                 id: 5,
-                name: 'Очки виртуальной реальности VR Box VR',
-                image : 'https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/hfb/h4c/31514855833630/vr-box-vr-2-0-black-11800010-1-Container.jpg',
-                price: 3500,
+                name: 'Levinson LA-R38B BK Pack 1 черный',
+                image : 'https://resources.cdn-kaspi.kz/img/m/p/h65/h8b/85124631134238.png?format=gallery-medium',
+                price: 25000,
                 rating : 5,
-                description: 'Definition of VR Box Headset for Beginners. Virtual reality VR Box headset is a head-mounted device that you wear over your eyes like a pair of goggles. This vr device provides virtual reality for the wearer. The goal of the VR headset is too provide immersive virtual reality experience.',
-                link: 'https://kaspi.kz/shop/p/vr-box-vr-2-0-11800010/?c=750000000#!/item'
+                description: 'итара со струнами + доп. комплект, чехол, ремень и каподастр. Для новичков и домашнего музицирования отличный вариант.',
+                link: 'https://kaspi.kz/shop/p/levinson-la-r38b-bk-pack-1-chernyi-112338990/?c=750000000'
             },
         ]
     }
