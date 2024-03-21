@@ -1,0 +1,24 @@
+h1{
+   color: rgb(252, 251, 251);
+   cursor: pointer;
+}
+.kaspi{
+   width: 25x;
+   height: 25px;
+   margin-left: 20px;
+}
+h1, .kaspi {
+   display: inline;
+}
+.kaspi2{
+   color:black;
+   font-weight: bold;
+   font-size:medium;
+   padding-left: 10px;
+   
+}
+/*
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at https://angular.io/license
+*/

@@ -1,0 +1,71 @@
+#show-details{
+    background-color: rgb(222, 217, 217);
+    
+}
+
+.show-and-share-and-remove{
+    display: flex;
+    flex-direction: column;
+    width: 130px;
+    margin-bottom: 30px;
+    justify-content: center;
+}
+
+.icon-buttons{
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    margin-right: 20px;
+    padding: 20px;
+}
+.icon{
+   
+    width: 45px;
+    height: 45px;
+ }
+.icon2{
+    width: 30px;
+    height: 30px;
+}
+
+.product{
+    margin: auto; 
+   max-width: 400px; 
+   padding: 20px; 
+   margin-bottom: 20px; 
+}
+
+.line{
+    width: 1300px;
+    height: 1px;
+    background-color: rgb(219, 219, 219);
+}
+
+
+#show-details:hover{
+    transform: scale(1.05);
+}
+
+#remove{
+    margin-top: 10px;
+    margin-bottom: 15px;
+    background-color: rgb(222, 217, 217);
+    color:brown;
+}
+#remove:hover{
+    transform: scale(1.05);
+}
+
+.like-button{
+    background-color: white;
+    width: 100px;
+    margin-top: 30px;
+    margin-left: -50px;
+}
+.like-button:hover{
+    transform: scale(1.01);
+}
+.like-cnt{
+    margin-top: -40px;
+    margin-left: 50px;
+}
