@@ -6,5 +6,5 @@ urlpatterns = [
   path('products/', views.getProducts, name='Get all products'),
   path('products/<int:id>/', views.getProductById, name='Get product by id'),
   path('categories/<int:id>', views.getCategoryById, name='Get category by id'),
-    path('categories/<int:id>/products', views.getProductsByCategory, name='Get category products')
+  path('categories/<int:id>/products', views.getProductsByCategory, name='Get category products')
 ]
